@@ -1,14 +1,12 @@
 var fibonacci = function (n){
   var a = 1, b = 1;
-  var count = 2;
   
-  while (count <= n){
+  while (n >= 2){
     var temp = a;
     a = a + b;
     b = temp;
-    count++;
+    n--;
   }
-
   return b;
 }
 
