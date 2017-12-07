@@ -17,3 +17,9 @@ var gcd = function(a,b){
 	return a;   
     return gcd(b, b%a);
 }
+
+var randomStudent = function(l){
+    var len = l.length;
+    var rand = Math.floor(Math.random() * len);
+    return l[rand];
+}
